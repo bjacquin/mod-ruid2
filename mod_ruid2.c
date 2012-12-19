@@ -1,5 +1,5 @@
 /*
-   mod_ruid2 0.9.8
+   mod_ruid2
    Copyright (C) 2009-2013 Monshouwer Internet Diensten
 
    Author: Kees Monshouwer
@@ -22,8 +22,6 @@
    - mod_ruid - http://websupport.sk/~stanojr/projects/mod_ruid/
      Copyright 2004 by Pavel Stano. All rights reserved
 
-   Instalation:
-   - /usr/apache/bin/apxs -a -i -l cap -c mod_ruid2.c
 */
 
 #include "ap_release.h"
@@ -46,9 +44,6 @@
 #include <unistd.h>
 #include <sys/prctl.h>
 #include <sys/capability.h>
-
-#define MODULE_NAME		"mod_ruid2"
-#define MODULE_VERSION		"0.9.8"
 
 #define RUID_MIN_UID		100
 #define RUID_MIN_GID		100
